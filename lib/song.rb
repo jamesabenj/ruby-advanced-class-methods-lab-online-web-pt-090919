@@ -23,6 +23,7 @@ class Song
   end 
   
   def self.find_by_name(song_name)
+    binding.pry
     @@all.detect(song_name)
       end
     
