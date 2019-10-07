@@ -41,7 +41,6 @@ class Song
   def new_from_filename(filename)
     binding.pry 
     song_name = filename.split("-")
-    binding.pry 
   end 
     
     
