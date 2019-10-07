@@ -47,6 +47,11 @@ class Song
     song.artist_name = artist_name
     song 
   end 
+  
+  def self.create_from_filename(filename)
+    self.new_from_filename(filename)
+    @@all << self 
+  end 
     
     
   
