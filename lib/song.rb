@@ -44,6 +44,7 @@ class Song
     song_name = components[0]
     song = self.new 
     song.name = song_name
+    binding.pry 
     song 
   end 
     
