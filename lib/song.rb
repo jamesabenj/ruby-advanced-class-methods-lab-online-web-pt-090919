@@ -49,6 +49,14 @@ class Song
   end 
   
   def self.create_from_filename(filename)
+     components = filename.split(" - ")
+    song_name = components[1].chomp(".mp3")
+    artist_name = components[0]
+    song = self.new 
+    song.name = song_name
+    song.artist_name = artist_name
+    @@all << song 
+    song 
     
   end 
     
