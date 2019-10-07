@@ -28,8 +28,7 @@ class Song
       
   def self.find_or_create_by_name(song_name)
     if self.find_by_name(song_name)
-      binding.pry
-      
+      return self 
     else 
       self.create_by_name(song_name)
     end 
