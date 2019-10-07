@@ -44,6 +44,7 @@ class Song
     artist_name = components[0]
     song = self.new 
     song.name = song_name
+    song.artist_name = artist_name
     song 
   end 
     
