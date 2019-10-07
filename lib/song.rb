@@ -33,6 +33,10 @@ class Song
       self.find_by_name(song_name)
     end 
   end
+  
+  def self.alphabetical
+    @@all.sort
+  end 
     
   
    def self.all
