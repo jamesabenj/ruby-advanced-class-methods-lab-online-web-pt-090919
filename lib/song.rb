@@ -39,8 +39,12 @@ class Song
   end 
   
   def new_from_filename(filename)
-    binding.pry
-    song_name = filename.split(" - ")[0]
+    components = filename.split(" - ")
+    artist_name = components[1].chomp(".mp3")
+    song_name = componenents[0]
+    song = self.new 
+    song.name = song_name
+    song 
   end 
     
     
