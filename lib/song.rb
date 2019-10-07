@@ -57,15 +57,11 @@ class Song
     song.artist_name = artist_name
     @@all << song 
     song 
-    
+  end 
+  
+  def self.destroy_all
+    @@all.clear
   end 
     
-    
-  
-   def self.all
-    @@all
-  end
-  
-  
 
 end
